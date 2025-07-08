@@ -23,7 +23,7 @@ Our mission is to make security and compliance achievable, repeatable, and prova
 | `amaani_compliance_checker.py` | The Python script that connects to your AWS account and fills in the “Compliant?” column for each item using CLI/API logic. |
 | `iam_compliance_user.tf` | Terraform code to create a new IAM user with all required read-only permissions to run the automation script. |
 | `amaani-compliance-readonly.json` | The exact IAM policy used to limit access to only what the script needs. |
-| `credentials.json` (optional) | Google Service Account credentials (not included by default — see setup instructions below). |
+| `credentials.json` (self setup) | Google Service Account credentials (not included by default — see setup instructions below). |
 | `README.md` | You’re reading it :) |
 
 ---
