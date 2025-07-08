@@ -1,8 +1,8 @@
 # 📊 Amaanī SOC 2 Compliance Automation Kit
 
 ### Built by Jude Wakim — Amaanī Cloud Security Architect  
-**Email:** wakimworks@gmail.com  
-**Website:** [Coming Soon]  
+**Email:** judewakim@wakimworks.com  
+**Website:** wakim-works.com
 **Version:** 1.0
 
 ---
