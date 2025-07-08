@@ -1,13 +1,13 @@
-# 📊 Amaanī SOC 2 Compliance Automation Kit
+# 📊 Amaani SOC 2 Compliance Automation Kit
 
-### Built by Jude Wakim — Amaanī Cloud Security Architect  
+### Built by Jude Wakim — Amaani Cloud Security Architect  
 **Email:** judewakim@wakimworks.com  
 **Website:** wakim-works.com <br>
 **Version:** 1.0
 
 ---
 
-## 🌩️ What is Amaanī?
+## 🌩️ What is Amaani?
 
 Amaanī is a cloud security automation consultancy focused on helping financial enterprises harden, monitor, and validate their AWS environments against strict compliance standards such as SOC 2.
 
@@ -65,48 +65,47 @@ python amaani_compliance_checker.py
 ---
 
 ## 🧰 Prerequisites
-•	Python 3.8+
+•	Python 3.8+ <br>
 •	boto3, gspread, and oauth2client installed:
 
 ```bash
 pip install boto3 gspread oauth2client
 ```
 
-•	A Google Service Account with Editor access to the Google Sheet
-•	Share your workbook with the service account email
-•	Save the credentials.json locally
+•	A Google Service Account with Editor access to the Google Sheet <br>
+•	Share your workbook with the service account email <br>
+•	Save the credentials.json locally <br>
 
----
-
-## 📬 Contact Amaanī
-If you need help with setup, custom compliance automation, or SOC 2 Type II readiness:
-
-Jude Wakim
-Cloud Security Architect
-Email: judewakim@wakimworks.com
-Based in: U.S. / Remote
-Specialties: AWS Security, Terraform, SOC 2, Zero Trust Architectures
-
-⸻
-
-Thank you for trusting Amaanī with your cloud security journey.
-“Security First. Compliance Included.”
 
 ---
 
 ## ✅ Final Structure of ZIP
 
-Amaani_SOC2_Compliance_Kit.zip
-├── terraform/
-│   ├── iam-compliance-user.tf
-├── scripts/
-│   ├── amaani-compliance-checker.py
-│   ├── amaani-compliance-readonly.json
-│   └── credentials.json  <-- added manually by client
-├── assets/
-│   └── amaani-soc2-workbook.xlsx
-├── .gitignore
-├── README.md
-├── credentials-creation.md
+Amaani_SOC2_Compliance_Kit.zip <br>
+├── terraform/ <br>
+│   ├── iam-compliance-user.tf <br>
+├── scripts/ <br>
+│   ├── amaani-compliance-checker.py <br>
+│   ├── amaani-compliance-readonly.json <br>
+│   └── credentials.json  <-- added manually by client <br>
+├── assets/ <br>
+│   └── amaani-soc2-workbook.xlsx <br>
+├── .gitignore <br>
+├── README.md <br>
+├── credentials-creation.md <br>
 
+---
 
+## 📬 Contact Amaani
+If you need help with setup, custom compliance automation, or SOC 2 Type II readiness:
+
+Jude Wakim <br>
+Cloud Security Architect <br>
+Email: judewakim@wakimworks.com <br>
+Based in: U.S. / Remote <br>
+Specialties: AWS Security, Terraform, SOC 2, Zero Trust Architectures <br>
+
+⸻
+
+Thank you for trusting Amaani with your cloud security journey. <br>
+“Security First. Compliance Included.” <br>
