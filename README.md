@@ -51,7 +51,7 @@ python amaani_compliance_checker.py
 ### Option B: Using the Provided IAM User (Terraform)
 1. Deploy the IAM user and policy
 ```hcl 
- terraform init
+terraform init
 terraform apply
 ```
 
