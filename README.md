@@ -2,7 +2,7 @@
 
 ### Built by Jude Wakim — Amaani Cloud Security Architect  
 **Email:** judewakim@wakimworks.com  
-**Website:** wakim-works.com <br>
+**Website:** wakim-works.com  <br>
 **Version:** 1.0
 
 ---
