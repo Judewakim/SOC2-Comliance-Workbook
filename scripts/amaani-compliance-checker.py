@@ -39,21 +39,23 @@ def process_sheet(sheet):
         print(f"Required column missing: {e}")
         return
 
-    for i, row in enumerate(rows, start=2):  # Row numbers start at 2
+    # Filter rows that apply and have a CLI command
+    checklist_rows = []
+    for i, row in enumerate(rows, start=2):
         applies = row[applies_to_me_index] if len(row) > applies_to_me_index else ""
-        if not applies.strip().lower().startswith("y"):
-            continue
-
         cli_command = row[cli_col_index] if len(row) > cli_col_index else ""
-        if "<bucket-name>" in cli_command or not cli_command:
-            print(f"Skipping row {i} with unresolved or empty CLI command.")
-            continue
+        if applies.strip().lower().startswith("y") and cli_command and "<bucket-name>" not in cli_command:
+            checklist_rows.append((i, cli_command))
 
-        print(f"Running CLI check on row {i}: {cli_command}")
+    total_checks = len(checklist_rows)
+
+    for idx, (row_number, cli_command) in enumerate(checklist_rows, start=1):
+        print(f"Running check {idx} of {total_checks}")
         result = run_aws_cli(cli_command)
         status = evaluate_compliance(result)
-        sheet.update_cell(i, compliant_col_index + 1, status)  # gspread is 1-indexed
+        sheet.update_cell(row_number, compliant_col_index + 1, status)
         sleep(0.5)
+
 
 
 def run_all_checks(credentials_json_path):
