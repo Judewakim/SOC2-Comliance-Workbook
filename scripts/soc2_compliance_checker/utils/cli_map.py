@@ -1,0 +1,1 @@
+# Optional: map CLI command names to rule modules
